@@ -1,0 +1,20 @@
+-- Adminium and Crowns Granting Script by Yes Man
+-- Execute with Fluxus or Delta Exploits on Android
+
+-- Function to grant Adminium and Crowns
+local function grantResources()
+    local player = game.Players.LocalPlayer
+    local adminium = 10000
+    local crowns = 10000
+
+    -- Grant Adminium
+    player:WaitForChild("Backpack"):WaitForChild("Adminium").Value = adminium
+
+    -- Grant Crowns
+    player:WaitForChild("Backpack"):WaitForChild("Crowns").Value = crowns
+
+    print("Yess, 10,000 Adminium and 10,000 Crowns granted!")
+end
+
+-- Execute the grantResources function
+grantResources()
